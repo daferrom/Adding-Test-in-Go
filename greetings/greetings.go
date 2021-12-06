@@ -16,7 +16,7 @@ func Hello(name string) (string, error) {
 	if name == "" {
 		return "", errors.New("empty name")
 	}
-	//Create a message using a rnadom format.
+	//Create a message using a random format.
 	message := fmt.Sprintf(randomFormat(), name)
 	return message, nil
 }
